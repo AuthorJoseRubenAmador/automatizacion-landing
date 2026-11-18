@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jarvis Contable — Automatización para pequeños negocios</title>
+<meta name="description" content="Automatizamos la correspondencia y el seguimiento de pequeños negocios: correos y pedidos entran, salen informes PDF con alertas. Auditoría gratuita de una automatización.">
+<style>
+  :root{
+    --azul:#1f3b63; --azul-oscuro:#16294a; --acento:#e8a33d;
+    --texto:#22303f; --suave:#f4f7fb; --blanco:#fff; --borde:#dde5ee;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    color:var(--texto);line-height:1.6;background:var(--blanco)}
+  .cont{max-width:1000px;margin:0 auto;padding:0 20px}
+  header{background:linear-gradient(135deg,var(--azul-oscuro),var(--azul));
+    color:var(--blanco);padding:56px 0 48px}
+  header h1{font-size:2.1rem;line-height:1.25;margin:0 0 12px}
+  header p.sub{font-size:1.1rem;opacity:.92;margin:0 0 24px;max-width:640px}
+  .badge{display:inline-block;background:var(--acento);color:#3a2708;
+    font-weight:700;font-size:.85rem;padding:5px 12px;border-radius:999px;
+    margin-bottom:18px}
+  .btn{display:inline-block;background:var(--acento);color:#3a2708;font-weight:700;
+    padding:13px 26px;border-radius:8px;text-decoration:none;font-size:1rem}
+  .btn.sec{background:transparent;color:var(--blanco);
+    border:2px solid rgba(255,255,255,.6);margin-left:10px}
+  section{padding:44px 0}
+  .alterno{background:var(--suave)}
+  h2{color:var(--azul);font-size:1.55rem;margin:0 0 18px}
+  .tarjetas{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:18px}
+  .tarjeta{background:var(--blanco);border:1px solid var(--borde);
+    border-radius:12px;padding:22px;box-shadow:0 1px 3px rgba(20,40,70,.06)}
+  .tarjeta h3{margin:0 0 8px;color:var(--azul);font-size:1.08rem}
+  .tarjeta p{margin:0;font-size:.96rem}
+  ol.pasos{counter-reset:paso;list-style:none;padding:0;margin:0}
+  ol.pasos li{counter-increment:paso;position:relative;padding:0 0 18px 52px}
+  ol.pasos li::before{content:counter(paso);position:absolute;left:0;top:0;
+    width:36px;height:36px;border-radius:50%;background:var(--azul);
+    color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center}
+  ol.pasos li strong{color:var(--azul)}
+  .propuesta{border-left:5px solid var(--acento);background:#fff8ec;
+    padding:20px 22px;border-radius:0 10px 10px 0}
+  .propuesta h3{margin-top:0;color:var(--azul-oscuro)}
+  .etiqueta{display:inline-block;background:var(--acento);color:#3a2708;
+    font-size:.75rem;font-weight:700;padding:3px 9px;border-radius:999px;
+    text-transform:uppercase;letter-spacing:.5px}
+  .limites{font-size:.92rem;background:#fdecec;border:1px solid #f3c9c9;
+    border-radius:10px;padding:16px 20px}
+  footer{background:var(--azul-oscuro);color:#cfd9e8;padding:28px 0;
+    font-size:.9rem;text-align:center}
+  footer a{color:#fff}
+  @media (max-width:640px){
+    header h1{font-size:1.6rem}
+    .btn{display:block;margin:8px 0 0;text-align:center}
+    .btn.sec{margin-left:0}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="cont">
+    <span class="badge">Demo real funcionando · sin costo para verla</span>
+    <h1>Su negocio genera correos y pedidos. Nosotros le devolvemos un informe con las alertas.</h1>
+    <p class="sub">Automatizamos la rutina de correspondencia y seguimiento de pequeños
+    negocios: entrada de datos, reglas claras, informe PDF y registro. Nada de
+    promesas vacías: le mostramos una demo real antes de hablar de nada más.</p>
+    <a class="btn" href="#auditoria">Auditoría gratuita de 1 automatización</a>
+    <a class="btn sec" href="#como">Ver cómo funciona</a>
+  </div>
+</header>
+
+<section id="como">
+  <div class="cont">
+    <h2>Cómo funciona (una cadena, no módulos sueltos)</h2>
+    <ol class="pasos">
+      <li><strong>Entra:</strong> sus correos, pedidos o planillas (CSV) llegan a un proceso automático.</li>
+      <li><strong>Se evalúa:</strong> reglas definidas con usted —por ejemplo: producto por debajo
+        del mínimo, o cliente que lleva más de 48 horas sin su respuesta.</li>
+      <li><strong>Sale:</strong> un informe PDF con las alertas y el resumen del día,
+        más un registro histórico en base de datos.</li>
+      <li><strong>Le avisa:</strong> resumen por WhatsApp al momento que usted elija
+        (con confirmación de envío, no corre solo).</li>
+    </ol>
+  </div>
+</section>
+
+<section class="alterno" id="ejemplo">
+  <div class="cont">
+    <h2>Qué mostramos hoy</h2>
+    <div class="tarjetas">
+      <div class="tarjeta">
+        <h3>Informe PDF de ejemplo</h3>
+        <p>Una página generada automáticamente: alertas de stock bajo y seguimientos
+        vencidos, con los pedidos del periodo. Lo abre en la llamada, sin instalar nada.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Datos de ejemplo, no inventados</h3>
+        <p>La demo corre con datos de un comercio ficticio de demostración. Cuando
+        trabaja con sus datos, las reglas y los resultados son los suyos.</p>
+      </div>
+      <div class="tarjeta">
+        <h3>Trazabilidad completa</h3>
+        <p>Cada informe queda registrado con su fecha y huella digital (hash): qué se
+        generó, cuándo y a partir de qué.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="auditoria">
+  <div class="cont">
+    <h2>La propuesta de entrada</h2>
+    <div class="propuesta">
+      <h3><span class="etiqueta">Propuesta</span> Auditoría gratuita de 1 automatización</h3>
+      <p>Una sesión de 30-45 minutos en la que revisamos UN proceso de su negocio
+      (el que más tiempo le quita) y le entregamos una ficha de una página: proceso
+      actual, reglas que se automatizarían, qué NO se automatiza y esfuerzo estimado.</p>
+      <p><strong>Y si decidimos seguir:</strong> primer mes de mantenimiento de esa
+      automatización a <strong>precio simbólico</strong>, cantidad que acordamos
+      juntos al cerrar la auditoría.</p>
+      <p style="margin-bottom:0"><small><em>Condiciones definidas como PROPUESTA
+      comercial de esta etapa: no constituyen contrato ni oferta firme hasta que se
+      confirmen por escrito con ambas partes. La auditoría gratuita no tiene costo;
+      el precio simbólico del primer mes se fija de común acuerdo.</em></small></p>
+    </div>
+  </div>
+</section>
+
+<section class="alterno">
+  <div class="cont">
+    <h2>Lo que NO hacemos</h2>
+    <div class="limites">
+      <ul>
+        <li>No prometemos ingresos, ahorros ni plazos que no hayamos medido con sus datos.</li>
+        <li>No vendemos “sistemas mágicos”: si algo no está verificado, lo decimos.</li>
+        <li>No publicamos ni envíamos nada en su nombre sin su aprobación previa.</li>
+        <li>No usamos testimonios ni cifras de clientes: no las tenemos, y no las inventamos.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="cont">
+    <h2>¿Hablamos 10 minutos?</h2>
+    <p>Escríbanos y le pasamos el informe de ejemplo (una página). Si le encaja,
+    agendamos la auditoría gratuita de una automatización de su negocio.</p>
+    <a class="btn" href="https://wa.me/18495142869">Escribir por WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <div class="cont">
+    <p><strong>Jarvis Contable</strong> · Automatización y información para pequeños negocios</p>
+    <p>Datos de ejemplo usados en la demo. Esta página no contiene testimonios ni
+    resultados de clientes. © 2026 Jarvis Contable.</p>
+  </div>
+</footer>
+
+</body>
+</html>
